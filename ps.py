@@ -1,28 +1,10 @@
-class Main {
-    
-  public static void main(String[] args) {
+a = 5
 
-    // binary number
-    long num = 110110111;
+print(type(a))
 
-    // call method by passing the binary number
-    int decimal = convertBinaryToDecimal(num);
+print(type(5.0))
 
-    System.out.println("Binary to Decimal");
-    System.out.println(num + " = " + decimal);
-  }
+c = 5 + 3j
+print(c + 3)
 
-  public static int convertBinaryToDecimal(long num) {
-    int decimalNumber = 0, i = 0;
-    long remainder;
-    
-    while (num != 0) {
-      remainder = num % 10;
-      num /= 10;
-      decimalNumber += remainder * Math.pow(2, i);
-      ++i;
-    }
-    
-    return decimalNumber;
-  }
-}
+print(isinstance(c, complex))
